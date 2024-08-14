@@ -3,18 +3,19 @@ import { SubHeading } from '../../components';
 import { images,data } from '../../constants';
 import './Laurels.css';
 
+//sub-component
+//award prop
+//Displays individual award cards with an image, title, and subtitle
 const AwardCard = ({award: {imgUrl,title,subtitle}})=>(
-  <div className='app__laurels_award-card'>
+  <div className='app__laurels_awards-card'>
     <img src={imgUrl} alt="award" />
-    <div className='app__laurels_award-card_content'>
+    <div className='app__laurels_awards-card_content'>
       <p className='p__cormorant'style={{color:'#DCCA87'}}>{title}</p>
       <p className='p__cormorant'>{subtitle}</p>
     </div>
-
   </div>
-
 )
-
+//Displays the awards section with a heading, a list of awards, and an image
 const Laurels = () => (
   <div className='app__bg app__wrapper section__padding'id='awards'>
     <div className='app__wrapper_info'>

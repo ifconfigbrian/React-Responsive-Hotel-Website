@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
+/* css variables */
 :root {
   --font-base: 'Cormorant Upright', serif;
   --font-alt: 'Open Sans', sans-serif;
@@ -12,6 +13,7 @@
   --color-white: #FFFFFF;
 }
 
+/* global reset */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -19,11 +21,13 @@
   scroll-behavior: smooth;
 }
 
+/* anchor tags */
 a {
   color: unset;
   text-decoration: none;
 }
 
+/* animation */
 .slide-bottom {
   -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

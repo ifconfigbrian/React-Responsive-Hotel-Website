@@ -1,5 +1,4 @@
 import React from 'react';
-
 import SubHeading from '../SubHeading/SubHeading';
 import './Newsletter.css';
 
@@ -11,10 +10,16 @@ const Newsletter = () => (
       <p className="p__opensans">And never miss latest Updates!</p>
     </div>
     <div className="app__newsletter-input flex__center">
-      <input type="email" placeholder="Enter your email address" />
+      <label htmlFor="newsletter-email" className="sr-only">Email Address</label>
+      <input
+        type="email"
+        id="newsletter-email"
+        placeholder="Enter your email address"
+        aria-label="Enter your email address"
+      />
       <button type="button" className="custom__button">Subscribe</button>
     </div>
   </div>
 );
 
-export default Newsletter
+export default Newsletter;

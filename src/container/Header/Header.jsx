@@ -4,7 +4,9 @@ import './Header.css';
 import { SubHeading } from '../../components';
 
 const Header = () => (
+  //main container for the header section, applying styles for padding and layout
   <div className='app__header app__wrapper section__padding' id='home'>
+    {/* Contains text content, including a subtitle, heading, paragraph, and button */}
     <div className='app__wrapper_info'>
       <SubHeading title="Chase the new Flavour"/>
       <h1 className='app__header-h1'>The Key To Fine Dining</h1>
@@ -14,6 +16,7 @@ const Header = () => (
          and a tranquil spa. At Gotham, we pride ourselves on providing personalized service and a warm, inviting atmosphere. Your perfect stay starts here.</p>
          <button type='button' className='custom__button'>Explore Menu</button>
     </div>
+    {/* header image */}
     <div className='app__wrapper_img'>
       <img src={images.welcome} alt="header-img" />
 

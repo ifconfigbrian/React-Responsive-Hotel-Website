@@ -19,3 +19,14 @@
     border: 1px solid var(--color-golden);
     cursor: pointer;
 }
+.app__video-overlay_circle:hover {
+    background: rgba(1, 42, 73, 0.7); /* Darker on hover */
+    border-color: var(--color-white); /* change border color on hover */
+}
+@media screen and (max-width: 768px) {
+    .app__video-overlay_circle {
+        width: 80px;
+        height: 80px;
+    }
+}
+

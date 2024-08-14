@@ -6,11 +6,14 @@
 
 .app__newsletter-heading {
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .app__newsletter-input {
+    display: flex;
     flex-direction: row;
     margin-top: 3rem;
+    justify-content: center;
 }
 
 .app__newsletter-input input {
@@ -19,8 +22,7 @@
     border-radius: 5px;
     font-size: 1rem;
     font-family: var(--font-base);
-    color: var(--color-white);
-    
+    color: var(--color-white); 
     margin-right: 2rem;
     padding: 0.75rem 1rem;
     background: var(--color-black);
@@ -28,6 +30,18 @@
 
 .app__newsletter-input button {
     width: max-content;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: var(--color-gray);
+    color: var(--color-golden);
+    font-family: var(--font-base);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.app__newsletter-input button:hover {
+    background: var(--color-white); 
 }
 
 @media screen and (min-width: 2000px) {
@@ -40,6 +54,7 @@
     .app__newsletter-input {
         flex-direction: column;
         width: 100%;
+        align-items: center;
     }
 
     .app__newsletter-input input {
@@ -50,7 +65,7 @@
 
 @media screen and (max-width: 650px) {
     .app__newsletter {
-        padding: 2rem 0;
+        padding: 2rem 1rem;
         border: none;
     }
 }
@@ -58,6 +73,6 @@
 @media screen and (max-width: 300px) {
     .app__newsletter-heading h1 {
         font-size: 32px;
-        line-height: 50px;
+        line-height: 40px;
     }
 }

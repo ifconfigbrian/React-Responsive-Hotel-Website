@@ -1,9 +1,14 @@
+ /* Positions the gallery as a horizontal flex container with padding */
  .app__gallery{
     /* display: flex; */
     flex-direction: row;
     background: var(--color-black);
     padding: 4rem 0 4rem 6rem;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
  }
+ /* Styles the content section with alignment and spacing */
  .app__gallery-content{
    flex: 1;
    display: flex;
@@ -16,6 +21,7 @@
  .app__gallery-content button{
    margin-top: 1rem;
  }
+ /* images container takes up half the width of the gallery */
  .app__gallery-images{
    flex: 1;
    display: flex;
@@ -23,17 +29,19 @@
    max-width: 50%;
    position: relative;
  }
+ /* Makes the images container scrollable horizontally and hides the scrollbar */
  .app__gallery-images_container{
    display: flex;
    flex-direction: row;
    width: max-content;
-   overflow-x: scroll;
+   overflow-x: auto;
    -ms-overflow-style: none;
    scrollbar-width: none;
  }
  .app__gallery-images_container::-webkit-scrollbar{
    display: none; 
  }
+ /* Styles each image card with specific dimensions and spacing */
  .app__gallery-images_card{
    position: relative;
    min-width: 301px;
@@ -68,14 +76,19 @@
    align-items: center;
    padding: 0 1rem;
    position: absolute;
-   bottom: 5%;
+   bottom: 10px;
+   left: 0;
+   right: 0;
+   z-index: 10;
  }
  .gallery__arrow-icon{
    color: var(--color-golden);
-   font-size: 2rem;
+   font-size: 3.2rem;
    cursor: pointer;
    background-color: var(--color-black);
    border-radius: 5px;
+   padding: 0.75rem;
+   z-index: 15;
  }
  .gallery__arrow-icon:hover{
    color: var(--color-white);
@@ -91,6 +104,10 @@
    .app__gallery-images_card{
       min-width: 400px;
       height: 547px;
+   }
+   .app__gallery-images_arrows {
+    bottom: 20px; /* Adjust arrow positioning for very wide screens */
+    padding: 0 4rem; /* Adjust padding for very wide screens */
    }
 
  }

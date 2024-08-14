@@ -4,10 +4,15 @@ import { SubHeading } from '../../components';
 import { images } from '../../constants';
 import './Gallery.css';
 
+//Stores the list of images to be displayed in the gallery
 const galleryImages = [images.gallery01,images.gallery02,images.gallery03,images.gallery04]
 
+//Renders the gallery section with a scrollable image container and navigation arrows
 const Gallery = () => {
-  const scrollRef = useRef(null);
+
+  const scrollRef = useRef(null);//access the container for scrolling
+  
+  //function adjusts the horizontal scroll position based on the direction (left or right
   const scroll = (direction) =>{
     const {current} = scrollRef;
     if(direction === 'left'){

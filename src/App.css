@@ -1,13 +1,16 @@
+/* global styles */
 .section__padding {
   padding: 4rem 6rem;
 }
 
+/* center items both horizontally and vertically */
 .flex__center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* set the background */
 .app__bg {
   background: url('./assets/bg.png');
   background-position: center;
@@ -16,6 +19,7 @@
   background-attachment: fixed;
 }
 
+/* flexbox container aligning items in a row with space between */
 .app__wrapper {
   display: flex;
   justify-content: space-between;
@@ -24,6 +28,7 @@
   min-height: 100vh;
 }
 
+/* flexbox container aligned at the start(vertical) */
 .app__wrapper_info {
   flex: 1;
   width: 100%;
@@ -52,6 +57,7 @@
   width: 80%;
 }
 
+/* styles for a custom button */
 .custom__button {
   background-color: var(--color-crimson);
     color: var(--color-black);
@@ -67,6 +73,7 @@
     cursor: pointer;
 }
 
+/* styles for text using cormorant upright font */
 .p__cormorant {
   font-family: var(--font-base);
   color: var(--color-white);
@@ -78,6 +85,7 @@
   font-size: 23px;
 }
 
+/* Styles for text using the Open Sans font */
 .p__opensans {
   font-family: var(--font-alt);
   color: var(--color-white);
@@ -88,6 +96,7 @@
   font-size: 16px;
 }
 
+/* styles for text using cormorant upright font */
 .headtext__cormorant {
   font-family: var(--font-base);
   color: var(--color-golden);
@@ -101,6 +110,7 @@
   width: 45px;
 }
 
+/* font sizes and line heights for better readability on very large screens */
 @media screen and (min-width: 2000px) {
   .custom__button,
   .p__cormorant {
@@ -123,6 +133,7 @@
   }
 }
 
+/* Changes the layout to column direction and adjusts margins and image widths */
 @media screen and (max-width: 1150px) {
   .app__wrapper {
     flex-direction: column;
@@ -141,12 +152,14 @@
   }
 }
 
+/* Reduces horizontal padding in sections */
 @media screen and (max-width: 850px) {
   .section__padding {
     padding: 4rem;
   }
 }
 
+/* Reduces padding and font sizes */
 @media screen and (max-width: 650px) {
   .section__padding {
     padding: 4rem 2rem;
@@ -161,6 +174,7 @@
   }
 }
 
+/* reduces font sizes for better readability on small devices */
 @media screen and (max-width: 450px) {
   .p__opensans {
     font-size: 12px;

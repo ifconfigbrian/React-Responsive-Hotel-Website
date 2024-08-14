@@ -4,6 +4,7 @@ import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, Special
 import { Navbar } from './components';
 import './App.css';
 
+//functional app component
 const App = () => (
   <div>
     <Navbar />

@@ -1,3 +1,4 @@
+/* base styles */
 .app__specialMenu{
     flex-direction: column;
     background: var(--color-black);
@@ -43,12 +44,12 @@
     margin: 2rem 0;
     width: 100%;
 }
-@media screen and (max-width:2000px){
+@media screen and (min-width:2000px){
     .app__specialMenu-menu_img{
-        width: 640px;
+        width: 650px;
     }
     .app__specialMenu-menu_img img{
-        height: 800px;
+        max-height: 800px;
     }
 
 }

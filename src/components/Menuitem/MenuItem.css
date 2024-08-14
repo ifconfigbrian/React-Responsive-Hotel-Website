@@ -27,3 +27,21 @@
     justify-content: flex-end;
     align-items: flex-end;
 }
+
+/* Hover effects */
+.app__menuitem:hover .app__menuitem-name {
+    color: var(--color-crimson);
+}
+
+/*Responsive design */
+@media (max-width: 600px) {
+    .app__menuitem-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .app__menuitem-dash {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}

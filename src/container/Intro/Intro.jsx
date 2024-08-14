@@ -4,15 +4,15 @@ import { meal } from '../../constants';
 import './Intro.css';
 
 const Intro = () => {
-  const vidRef = useRef();
-  const [playVideo,setPlayVideo] = useState();
+  const vidRef = useRef();//reference to video element for controlling video playback
+  const [playVideo,setPlayVideo] = useState(false);//default state set to false
 
   const handleVideo = () =>{
-    setPlayVideo((prevPlayVideo) => !prevPlayVideo)
+    setPlayVideo((prevPlayVideo) => !prevPlayVideo)//toggle play state
     if(playVideo){
-      vidRef.current.pause();
+      vidRef.current.pause();//pause the video if currently playing
     }else{
-      vidRef.current.play();
+      vidRef.current.play();//play the video if paused
     }
   }
 

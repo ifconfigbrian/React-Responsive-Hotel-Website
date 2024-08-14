@@ -13,3 +13,11 @@
 .app__footerOverlay-img{
     height: 75%;
 }
+@media screen and (max-width: 768px) {
+    .app__footerOverlay-black {
+        height: 20%;
+    }
+    .app__footerOverlay-img {
+        height: 80%;
+    }
+}
